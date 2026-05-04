@@ -13,18 +13,18 @@ Attack Execution: Compile the contract to opcode/bytecode and test against detec
 ## Code Structure
 ```
 FF-Attack/
-├── ML_learning/                        # Traditional machine learning methods
+├── ML_learning/                        # Machine learning methods
 │   ├── NgramCount/                     # N-gram count features
 │   ├── N_TermCount/                    # N-term count features
 │   ├── N_TF_IDF/                       # TF-IDF features
-│   ├── N_TF-IDF-on-Ngram/              # N-gram based TF-IDF features
+│   ├── N_TF-IDF-on-Ngram/              # TF-IDF for N-gram features
 │   ├── N_Word2Vec/                     # Word2Vec features
 │   ├── code_poisoning_defense/         # KILLBADCODE defense
 │   └── SS/                             # Spectral Signature defense
 │
 └── SCSGuard/                           # Deep learning methods
     ├── data/                           # Datasets
-    ├── preprocess_poi/                 # POI preprocessing folder
+    ├── preprocess_poi.py               # POI preprocessing
     ├── poi_train.py                    # Training 
     ├── poi_eval.py                     # Evaluation 
     └── models/                         # Models
