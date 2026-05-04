@@ -11,6 +11,7 @@ Injection Method: Insert triggers into the contract at the Abstract Syntax Tree 
 Attack Execution: Compile the contract to opcode/bytecode and test against detection models.
 
 ## Code Structure
+```
 FF-Attack/
 ├── ML_learning/                        # Traditional machine learning methods
 │   ├── NgramCount/                     # N-gram count features
@@ -27,6 +28,7 @@ FF-Attack/
     ├── poi_train.py                    # Training 
     ├── poi_eval.py                     # Evaluation 
     └── models/                         # Models
+```
 
 ### Description
 - **ML_learning**: Implements backdoor attacks based on machine learning methods. It includes five feature extraction methods (`NgramCount`, `N_TermCount`, `N_TF_IDF`, `N_TF-IDF-on-Ngram`, `N_Word2Vec`) and two defense mechanisms (`code_poisoning_defense` implements the KILLBADCODE defense, and `SS` implements the Spectral Signature defense, covering all five feature types).
